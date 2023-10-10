@@ -1,0 +1,38 @@
+@import 'mixins';
+@import 'vars';
+
+.user-ref {
+    padding-right: .25rem;
+}
+
+:host {
+    overflow-y: auto;
+}
+
+:host ::ng-deep {
+    .user-ref {
+        @include text-variable;
+    }
+
+    .marker-ref {
+        @include text-variable;
+    }
+}
+
+.user-picture {
+    margin-top: .25rem;
+}
+
+.event {
+    font-size: $font-small;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+
+    &-created {
+        font-size: $font-small;
+    }
+
+    &-right {
+        overflow: hidden;
+    }
+}
